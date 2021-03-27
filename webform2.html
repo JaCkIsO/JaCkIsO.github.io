@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebForm 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <style>
+        .navbar-custom {
+            background-color: #35A6E7;
+        }
+
+        .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+            border-right: 2px solid #FFF;
+        }
+
+        .top-margin {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-dark ">
+        <a class="navbar-brand" href="#">MUM Golden Dome Market:::SRM System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Suppliers</a>
+                </li>
+            </ul>
+            <div>
+                Hello!
+                <button class="btn" type="submit">Sign Out</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container top-margin">
+        <h2 class="top-margin">New Product Form</h2>
+        <form action="submit">
+            <div class="row top-buffer justify-content-end">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="productNumber">Product Number</label>
+                        <input id="productNumber" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="unitPrice">Unit Price</label>
+                        <input id="unitPrice" type="text" class="form-control" placeholder="0.0">
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="quantityInStock">Quantity in Stock</label>
+                        <input id="quantityInStock" type="number" placeholder="0" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="supplier">Supplier</label>
+
+                        <select id="supplier" class="form-control">
+                            <option selected>Select a supplier</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateSupplied">Date supplied</label>
+                        <input id="dateSupplied" type="date" class="form-control" aria-describedby="validDate">
+                        <small id="validDate" class="form-text text-muted">Enter a valid Date.</small>
+                    </div>
+                </div>
+
+                <div class="col float-right">
+
+                    <button type="submit" class="btn btn-outline-primary">Reset</button>
+                    <button type="submit" class="btn btn-outline-warning">Cancel</button>
+                    <button type="submit" class="btn btn-outline-info">Add Product</button>
+
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+    <a href="index.html">Home</a>
+</body>
+
+</html>
