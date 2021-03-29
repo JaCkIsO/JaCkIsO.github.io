@@ -28,3 +28,22 @@ function isVowel(x){
 }
 // console.log(isVowel('a'));
 
+// Q4
+function sum(array){
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i]; 
+    }
+    return sum;
+}
+
+function multiply(array){
+    let product = 1;
+    for (let i = 0; i < array.length; i++) {
+        product *= array[i];
+    }
+    return product;
+}
+// console.log(sum([1,2,3,4]));
+// console.log(multiply([1,2,3,4]));
+
