@@ -47,3 +47,13 @@ function multiply(array){
 // console.log(sum([1,2,3,4]));
 // console.log(multiply([1,2,3,4]));
 
+// Q5
+function reverse(str){
+    let reversedStr = "";
+    for (let i = str.length - 1; i >= 0; i--){
+        reversedStr = reversedStr.concat(str[i]);
+    }
+    return reversedStr;
+}
+// console.log(reverse("abcdefg"));
+
