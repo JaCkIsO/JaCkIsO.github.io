@@ -57,3 +57,15 @@ function reverse(str){
 }
 // console.log(reverse("abcdefg"));
 
+// Q6
+function findLongestWord(array){
+    let lenOfLongest = 0;
+    for (let i = 0; i < array.length; i++) {
+        if(lenOfLongest < array[i].length){
+            lenOfLongest = array[i].length
+        }
+    }
+    return lenOfLongest;
+}
+// console.log(findLongestWord(["a", "ab", "abc"]));
+
