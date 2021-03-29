@@ -81,3 +81,17 @@ function filterLongWords(array, len){
 }
 // console.log(filterLongWords(["a", "ab", "abc"], 1));
 
+// Q8
+function computeSumOfSquares(array){
+    return array.map(element => element * element)
+                .reduce((a, b) => a + b);
+}
+// console.log(computeSumOfSquares([1,2,3,4]));
+
+// Q9
+function printOddNumbersOnly(array){
+    array.filter(element => element % 2 != 0)
+        .forEach(element => console.log(element));
+}
+// printOddNumbersOnly([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+
