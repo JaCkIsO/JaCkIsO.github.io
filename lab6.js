@@ -69,3 +69,15 @@ function findLongestWord(array){
 }
 // console.log(findLongestWord(["a", "ab", "abc"]));
 
+// Q7
+function filterLongWords(array, len){
+    let filteredArr = [];
+    for (let i = 0; i < array.length; i++) {
+        if(array[i].length > len){
+            filteredArr.push(array[i]);
+        }
+    }
+    return filteredArr;
+}
+// console.log(filterLongWords(["a", "ab", "abc"], 1));
+
