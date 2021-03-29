@@ -55,7 +55,7 @@
 
     <div class="container top-margin">
         <h2 class="top-margin">New Product Form</h2>
-        <form action="submit">
+        <form>
             <div class="row top-buffer justify-content-end">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -84,7 +84,8 @@
 
                         <select id="supplier" class="form-control">
                             <option selected>Select a supplier</option>
-                            <option>...</option>
+                            <option>Bob</option>
+                            <option>Dylan</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -98,11 +99,22 @@
 
                     <button type="submit" class="btn btn-outline-primary">Reset</button>
                     <button type="submit" class="btn btn-outline-warning">Cancel</button>
-                    <button type="submit" class="btn btn-outline-info">Add Product</button>
+                    <button onclick="showAlert()" type="submit" class="btn btn-outline-info">Add Product</button>
 
                 </div>
             </div>
-
+            <script>
+                function showAlert(){
+                    alert(
+                        "Product Number: "+  document.getElementById("productNumber").value + "\n" +
+                        "Name: "+  document.getElementById("name").value + "\n" +
+                        "Unit Price: "+  document.getElementById("unitPrice").value + "\n" +
+                        "Quantity In Stock: "+  document.getElementById("quantityInStock").value + "\n" +
+                        "Supplier: "+  document.getElementById("supplier").value + "\n" +
+                        "Date Supplied: "+  document.getElementById("dateSupplied").value + "\n" 
+                    );
+                }
+            </script>
 
         </form>
 
