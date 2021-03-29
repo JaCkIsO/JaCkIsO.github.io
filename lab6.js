@@ -95,3 +95,22 @@ function printOddNumbersOnly(array){
 }
 // printOddNumbersOnly([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 
+// Q10
+function computeSumOfSquaresOfEvensOnly(array){
+    return array.filter(element => element % 2 == 0)
+                .map(element => element * element)
+                .reduce((a, b) => a + b);
+}
+// console.log(computeSumOfSquaresOfEvensOnly([1, 2, 3, 4, 5]));
+
+// Q11
+function sumWithReduce(array){
+    return array.reduce((a, b) => a + b);
+}
+
+function multiplyWithReduce(array){
+    return array.reduce((a, b) => a * b);
+}
+// console.log(sumWithReduce([1, 2, 3, 4, 5]));
+// console.log(multiplyWithReduce([1, 2, 3, 4, 5]));
+
