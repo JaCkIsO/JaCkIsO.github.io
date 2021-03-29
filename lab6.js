@@ -114,3 +114,23 @@ function multiplyWithReduce(array){
 // console.log(sumWithReduce([1, 2, 3, 4, 5]));
 // console.log(multiplyWithReduce([1, 2, 3, 4, 5]));
 
+// Q12
+function findSecondBiggest(array){
+    let biggest = array[0];
+    let secondBiggest = array[1];
+    if (biggest < secondBiggest){
+        biggest = secondBiggest;
+        secondBiggest = array[0];
+    }
+    for (let i = 2; i < array.length; i++) {
+        if(array[i] > biggest){
+            secondBiggest = biggest;
+            biggest = array[i];
+        } else if (array[i] > secondBiggest){
+            secondBiggest = array[i];
+        }
+    }
+    return secondBiggest;
+}
+// console.log(findSecondBiggest([1,2,3,4,5]));
+
