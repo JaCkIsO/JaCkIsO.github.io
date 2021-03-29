@@ -23,7 +23,7 @@ function maxOfThree(x, y, z){
 
 // Q3
 function isVowel(x){
-    let vowel = x.trim().charAt(0);
+    let vowel = x.toLowerCase().trim().charAt(0);
     return /[aeiou]/.test(vowel);
 }
 // console.log(isVowel('a'));
