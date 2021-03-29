@@ -21,3 +21,10 @@ function maxOfThree(x, y, z){
 }
 // console.log(maxOfThree(4,7,1));
 
+// Q3
+function isVowel(x){
+    let vowel = x.trim().charAt(0);
+    return /[aeiou]/.test(vowel);
+}
+// console.log(isVowel('a'));
+
