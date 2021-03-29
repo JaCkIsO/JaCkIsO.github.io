@@ -134,3 +134,16 @@ function findSecondBiggest(array){
 }
 // console.log(findSecondBiggest([1,2,3,4,5]));
 
+// Q13
+function printFibo(len, a, b){
+    let fibArray = [];
+    fibArray.push(a);
+    if (len > 1){
+        fibArray.push(b);
+    }
+    while (len > fibArray.length){
+        fibArray.push(fibArray[fibArray.length-1] + fibArray[fibArray.length-2])
+    }
+    return fibArray;
+}
+// console.log(printFibo(6, 0, 1));
