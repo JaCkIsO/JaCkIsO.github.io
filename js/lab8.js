@@ -40,3 +40,47 @@ console.log(add5());
 console.log(add5());
 console.log(add5());
 
+// Q9 
+// Put all code in module IIFE
+// (function(){
+// 
+// })();
+
+// Q10
+
+let emp = (()=>{
+    let name;
+    let age;
+    let salary;
+
+    function setAge(newAge){
+        age = newAge;
+    }
+    function setSalary(newSalary){
+        salary = newSalary;
+    }
+    function setName(newName){
+        name = newName;
+    }
+    function getAge(){
+        return age;
+    }
+    function getSalary(){
+        return salary;
+    }
+    function getName(){
+        return name;
+    }
+    return {
+        setName: setName,
+        setSalary: setSalary,
+        setAge: setAge,
+        increaseSalary: (percentage)=>{
+            setSalary(getSalary() + percentage * getSalary());
+        },
+        incrementSalary: ()=>{
+            setAge(getAge() + 1);
+        }
+    }
+})();
+
