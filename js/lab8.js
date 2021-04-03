@@ -84,3 +84,11 @@ let emp = (()=>{
     }
 })();
 
+// Q11
+emp.address = ""
+emp.getAddress = function(){
+    return this.address;
+}
+emp.setAddress = function(newAddress){
+    this.address = newAddress;
+}
