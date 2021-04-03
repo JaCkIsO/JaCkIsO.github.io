@@ -25,3 +25,18 @@ console.log(add.counter());
 add.reset();
 console.log(add.counter());
 
+// Q7
+// Free variable will be counter
+
+// Q8
+function make_adder(inc){
+    let counter = 0;
+    return function(){
+        return counter += inc;
+    }
+}
+let add5 = make_adder(5)
+console.log(add5());
+console.log(add5());
+console.log(add5());
+
