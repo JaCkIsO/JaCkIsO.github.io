@@ -5,19 +5,19 @@ let person = {
     name: "",
     dateOfBirth: "",
 
-    getName(){
+    getName: function(){
         return this.name;
     },
-    setName(name){
+    setName: function(name){
         this.name = name;
     },
-    getDateOfBirth(){
+    getDateOfBirth: function(){
         return this.dateOfBirth;
     },
-    setDateOfBirth(dateOfBirth){
+    setDateOfBirth: function(dateOfBirth){
         this.dateOfBirth = dateOfBirth;
     },
-    toString(){
+    toString: function(){
         return `The person's name is ${this.name}\n${this.name} was born on ${this.dateOfBirth.toISOString().substring(0,10)}`;
     }
 
@@ -30,7 +30,7 @@ console.log(john.toString());
 let employee = {
     salary: 0.0,
     hireDate: Date.now(),
-    doJob(jobTitle){
+    doJob: function(jobTitle){
         console.log(`${this.name} is a ${jobTitle} who earns $${this.salary.toLocaleString()}`);
     }
 }
