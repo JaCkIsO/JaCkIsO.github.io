@@ -1,0 +1,11 @@
+{
+    "name": "lab-10",
+    "version": "1.0.0",
+    "description": "lab 10 of WAP",
+    "main": "main.js",
+    "dependencies": {},
+    "devDependencies": {},
+    "private": true,
+    "type":"module",
+    "license": "MIT"
+}
