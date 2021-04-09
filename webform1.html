@@ -11,11 +11,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <style>
-            .top-margin{
-                margin-top: 100px;
-            }
-        </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/webform1.js"></script>
+    <style>
+        .top-margin{
+            margin-top: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,17 +40,10 @@
                 <input type="checkbox" class="form-check-input" id="check-me-out">
                 <label class="form-check-label" for="check-me-out">Check me out</label>
             </div>
-            <button onclick="printToConsole()" type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-    <script>
-        function printToConsole(){
-            console.log("Email: " + document.getElementById("email").value);
-            console.log("Password: " + document.getElementById("password").value);
-            console.log("URL: " + document.getElementById("url").value);
-            console.log("Is Checked: " + document.getElementById("check-me-out").checked);
-        }
-    </script>
+    
     <a href="index.html">Home</a>
 </body>
 

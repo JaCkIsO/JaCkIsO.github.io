@@ -11,6 +11,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/webform2.js"></script>
     <style>
         .navbar-custom {
             background-color: #35A6E7;
@@ -99,22 +101,10 @@
 
                     <button type="submit" class="btn btn-outline-primary">Reset</button>
                     <button type="submit" class="btn btn-outline-warning">Cancel</button>
-                    <button onclick="showAlert()" type="submit" class="btn btn-outline-info">Add Product</button>
+                    <button type="submit" class="btn btn-outline-info">Add Product</button>
 
                 </div>
             </div>
-            <script>
-                function showAlert(){
-                    alert(
-                        "Product Number: "+  document.getElementById("productNumber").value + "\n" +
-                        "Name: "+  document.getElementById("name").value + "\n" +
-                        "Unit Price: "+  document.getElementById("unitPrice").value + "\n" +
-                        "Quantity In Stock: "+  document.getElementById("quantityInStock").value + "\n" +
-                        "Supplier: "+  document.getElementById("supplier").value + "\n" +
-                        "Date Supplied: "+  document.getElementById("dateSupplied").value + "\n" 
-                    );
-                }
-            </script>
 
         </form>
 
